@@ -1,0 +1,577 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+::-webkit-scrollbar{
+  display: none;
+}
+*{
+  scroll-behavior: smooth;
+}
+
+body{
+  background-color: #F6F7EB;
+}
+
+nav button:hover, header button:hover{
+  color: #F6F7EB;
+  background-color: #12372A;
+  border: 1px solid #F6F7EB;
+  transform: scale(1.05);
+}
+
+/* Navbar */
+
+nav{
+  position: sticky;
+  height: 3.5rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 3rem;
+  align-items: center;
+  background-color: #EFF0E5;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  font-family: "Chakra Petch", sans-serif;
+}
+.nav-logo{
+  height: 100%;
+  display: flex;
+}
+.nav-logo img{
+  height: 100%;
+  border-radius: 0.5rem;
+}
+.nav-burger{
+  display: none;
+  align-items: center;
+  gap: 1rem;
+}
+.nav-links{
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  gap: 4rem;
+  font-weight: 500;
+}
+.nav-links a{
+  color: #12372A;
+  text-decoration: none;
+  word-spacing: 3px;
+  font-size: 1.2rem;
+}
+.nav-links a span{
+  color: #0B1215;
+}
+.nav-links a:focus span{
+  color: #12372A;
+}
+.nav-burger{
+  cursor: pointer;
+}
+nav button{
+  font-size: 0.9rem;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 600;
+  background-color: transparent;
+  color: #12372A;
+  padding: 0.5rem 1rem;
+  border: 1px solid #12372A;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Header Section */
+header{
+  padding-top: 3rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  min-width: 100vw;
+  padding-left: 15rem;
+  padding-bottom: 10rem;
+}
+header ul{
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+header ul li:nth-of-type(1){
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 2rem;
+  font-weight: 500;
+  color: #12372A;
+}
+header ul li:nth-of-type(2){
+  font-family: "Roboto Mono", monospace;
+  font-size: 3rem;
+  font-weight: 500;
+  color: #2A2A2A;
+}
+header ul li:nth-of-type(3){
+  font-family: "Roboto Mono", monospace;
+  font-size: 3.4rem;
+  font-weight: 500;
+  color: #535353;
+}
+header button{
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #12372A;
+  background-color: transparent;
+  padding: 1rem 2.5rem;
+  border: 1px solid #12372A;
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+/* About section */
+
+section.about{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+  min-width: 100vw;
+  padding-left: 15rem;
+  padding-bottom: 12rem;
+}
+section.about div{
+  max-width: 45vw;
+}
+section.about div.about-head span:nth-of-type(1){
+  color: #12372A;
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 2rem;
+}
+section.about div.about-head span:nth-of-type(2){
+  color: #1E1E1E;
+  font-family: "Roboto Mono", monospace;
+  font-size: 2.2rem;
+  font-weight: 500;
+  padding-left: 1.5rem;
+}
+section.about div.about-desc span{
+  color: #0B1215;
+  font-family: "Roboto Mono", monospace;
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+
+/* Experience section */
+
+section.experience{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+  min-width: 100vw;
+  padding-left: 15rem;
+  padding-bottom: 12rem;
+}
+section.experience div{
+  max-width: 45vw;
+}
+section.experience div.experience-head span:nth-of-type(1){
+  color: #12372A;
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 2rem;
+}
+section.experience div.experience-head span:nth-of-type(2){
+  color: #1E1E1E;
+  font-family: "Roboto Mono", monospace;
+  font-size: 2.2rem;
+  font-weight: 500;
+  padding-left: 1.5rem;
+}
+
+.experience-container {
+  display: flex;
+  justify-content: center;
+}
+
+.button-list {
+  display: flex;
+  flex-direction: column;
+  background-color: transparent;
+}
+
+.job-button {
+  color: #436850;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 500;
+  font-size: 1.4rem;
+  padding: 1rem;
+  border: none;
+  border-left: 3px solid #436850;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  background-color: transparent;
+} 
+.job-button.selected {
+  color: #12372A;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 500;
+  font-size: 1.4rem;
+  transition: all 0.3s ease-in-out;
+  border-left: 3px solid #12372A;
+}
+.job-details{
+  display: flex;
+  flex-direction: column;
+  list-style-type: none; /* Removes default bullets */
+  padding: 0;
+}
+.job-details h2{
+  color: #0B1215;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 500;
+  font-size: 1.6rem;
+}
+.job-details span{
+  color: #535353;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  padding-top: 0.25rem;
+}
+.job-details ol{
+  padding-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.job-details li {
+  color: #535353;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  margin-bottom: 10px; /* Space between items */
+  position: relative;
+  padding-left: 20px; /* Space for the bullet */
+  flex: 1; /* All items will share available space equally */
+  max-width: 50vw /* Optionally limit the maximum width */
+}
+.job-details li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%) rotate(45deg);
+  width: 6px;
+  height: 6px;
+  background-color: transparent; /* No fill */
+  border:2px solid #12372A; /* Defines the border and its color */
+}
+
+/* Projects section */
+
+section.projects{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+  min-width: 100vw;
+  padding-left: 15rem;
+  padding-bottom: 12rem;
+}
+section.projects div.projects-head span:nth-of-type(1){
+  color: #12372A;
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 2rem;
+}
+section.projects div.projects-head span:nth-of-type(2){
+  color: #1E1E1E;
+  font-family: "Roboto Mono", monospace;
+  font-size: 2.2rem;
+  font-weight: 500;
+  padding-left: 1.5rem;
+}
+section.projects div.projects-head span:nth-of-type(3){
+  color: #1E1E1E;
+  font-family: "Roboto Mono", monospace;
+  font-size: 0.6rem;
+  font-weight: 500;
+  padding-left: 1rem;
+}
+section.projects div.projects-carousel{
+  overflow: hidden;
+  cursor: grab;
+  max-width: 78vw;
+}
+section.projects div.projects-container  {
+  display: flex;
+  gap: 2rem;
+}
+section.projects div.projects-container div.project  {
+  min-height: 20rem;
+  min-width: 15rem;
+  padding-right: 2rem;
+}
+
+section.projects div.projects-container div.project img  {
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  border-radius: 0.5rem;
+  pointer-events: none;
+}
+
+
+/* Contact section */
+
+section.contact{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+  min-width: 100vw;
+  padding-left: 15rem;
+  padding-bottom: 12rem;
+}
+section.contact div{
+  max-width: 45vw;
+}
+section.contact a:visited{
+  color: #0B1215;
+}
+section.contact div.contact-head span:nth-of-type(1){
+  color: #12372A;
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 2rem;
+}
+section.contact div.contact-head span:nth-of-type(2){
+  color: #1E1E1E;
+  font-family: "Roboto Mono", monospace;
+  font-size: 2.2rem;
+  font-weight: 500;
+  padding-left: 1.5rem;
+}
+section.contact div.contact-bottom ul{
+  display: flex;
+  flex-direction: column;
+  gap: 0.725rem;
+  font-family: "Chakara Petch", sans-serif;
+  font-size: 1.2rem;
+  padding-left: 1.5rem;
+  font-weight: 500;
+}
+section.contact div.contact-bottom ul li a:nth-of-type(1){
+  padding-left: 0.8rem;
+}
+section.contact div.contact-bottom ul li a{
+  font-size: 1rem;
+  text-decoration: underline;
+  font-family: "Chakara Petch", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+@media (width <= 1100px) {
+.nav-links{
+  display: none;
+}
+.nav-burger{
+  display: flex;
+}
+header{
+  padding-left: 0;
+  align-items: center;
+}
+}
+@media (width <= 768px) {
+  /* Header */
+  header {
+    display: flex;
+    height: 75vh;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+  }
+  header ul{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 70%;
+  }
+  header ul li:nth-of-type(1){
+    font-size: 1.2rem;
+  }
+  header ul li:nth-of-type(2){
+    font-size: 2rem;
+  }
+  header ul li:nth-of-type(3){
+    font-size: 2.5rem;
+  }
+  header button{
+    padding: 0.8rem 1.4rem;
+    font-size: 1rem;
+  }
+
+  /* About section */
+  section.about{
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+  }
+  section.about div{
+    padding: 0 8rem;
+    max-width: 100vw;
+  }
+  section.about div.about-head span:nth-of-type(1){
+    font-size: 1.5rem;
+  }
+  section.about div.about-head span:nth-of-type(2){
+    font-size: 1.8rem;
+
+    padding-left: 1rem;
+  }
+  section.about div.about-desc span{
+    font-size: 0.9rem;
+  }
+
+  /* Experience section */
+
+  section.experience{
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+  }
+  section.experience div{
+    max-width: 90vw;
+    align-items: center;
+  }
+  section.experience div.experience-head span:nth-of-type(1){
+    font-size: 1.5rem;
+  }
+  section.experience div.experience-head span:nth-of-type(2){
+    font-size: 1.8rem;
+    padding-left: 1rem;
+  }
+  .button-list {
+    flex-direction: row;
+  }
+  .experience-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .job-details{
+    width: 100%;
+  }
+  .job-button {
+    border: none;
+    font-size: 1rem;
+    padding: 0 0.2rem;
+    border-bottom: 3px solid #436850;
+  }
+  .job-button.selected {
+    border: none;
+    color: #12372A;
+    font-size: 1rem;
+    border-bottom: 3px solid #12372A;
+  }
+  .job-details h2{
+    font-size: 1.4rem;
+  }
+  .job-details span{
+    font-size: 0.8rem;
+    padding-top: 0.35rem;
+  }
+  .job-details ol{
+    padding-top: 1.3rem;
+    max-width: 70vw;
+  }
+  .job-details li {
+    font-size: 0.9rem;
+    margin-bottom: 8px; /* Space between items */
+    max-width: 70vw /* Optionally limit the maximum width */
+  }
+  .job-details li::before {
+    width: 5px;
+    height: 5px;
+  }
+
+  /* Projects section */
+
+  section.projects{
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+  }
+  section.projects div{
+    max-width: 50vw;
+    align-items: center;
+  }
+  section.projects div.projects-head span:nth-of-type(1){
+    font-size: 1.5rem;
+  }
+  section.projects div.projects-head span:nth-of-type(2){
+    font-size: 1.8rem;
+    padding-left: 1rem;
+  }
+  section.projects div.projects-head span:nth-of-type(3){
+    font-size: 0.6rem;
+  }
+  section.projects div.projects-carousel{
+    max-width: 58vw;
+  }
+  section.projects div.projects-container  {
+    gap: 1rem;
+  }
+  section.projects div.projects-container div.project  {
+    max-height: 25rem;
+    max-width: 10rem;
+    padding-right: 2rem;
+  }
+  section.projects div.projects-container div.project img  {
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    border-radius: 0.5rem;
+    pointer-events: none;
+  }
+
+  /* Contact section */
+
+  section.contact{
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+  }
+  section.contact div{
+    max-width: 60vw;
+  }
+  section.contact div.contact-head span:nth-of-type(1){
+    font-size: 1.5rem;
+  }
+  section.contact div.contact-head span:nth-of-type(2){
+    font-size: 1.8rem;
+    padding-left: 1rem;
+  }
+  section.contact div.contact-bottom ul{
+    gap: 0.525rem;
+    font-family: "Chakara Petch", sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  section.contact div.contact-bottom ul li a{
+    font-size: 0.5rem;
+    text-decoration: underline;
+    font-family: "Chakara Petch", sans-serif;
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
+}

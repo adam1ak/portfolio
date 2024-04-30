@@ -1,0 +1,39 @@
+{
+    "TechCorp": {
+      "position" : "Senior Front-End Developer",
+      "year": "June 2020 - Present",
+      "description" : [
+        "Spearheaded the development of a sophisticated e-commerce platform catering to BigMart's needs, utilizing React.js framework.",
+        "Collaborated closely with the design team to craft responsive and visually appealing user interfaces, ensuring seamless user experiences across devices.",
+        "Implemented robust state management solutions with Redux, optimized performance through efficient code practices, and provided mentorship to junior developers, fostering a culture of continual improvement."
+    ]
+    },
+    "GlobalBank": {
+        "position" : "UX/UI Design Lead",
+        "year": "May 2017 - June 2020",
+        "description" : [
+          "Led a team of designers in creating intuitive and innovative user interface designs for various digital platforms, with a focus on maximizing usability and enhancing user satisfaction.",
+          "Worked in partnership with front-end developers to ensure the technical feasibility of designs and maintained a cohesive aesthetic across all product interfaces.",
+          "Conducted user testing and feedback sessions to refine designs, ensuring all user interfaces are accessible and user-friendly, and provided leadership in adopting new design technologies and methodologies."
+      ]
+      },
+    "HealthTech": {
+        "position" : "Back-End Systems Architect",
+        "year": "October 2015 - May 2017",
+        "description" : [
+          "Designed and implemented scalable server architectures to support high-traffic e-commerce applications, using Node.js and MongoDB.",
+          "Ensured robust API integration and security protocols were in place to protect data and system integrity while facilitating seamless interactions between front-end and back-end components.",
+          "Provided strategic direction and technical leadership within the engineering team, overseeing the migration of legacy systems to modern cloud-based infrastructure."
+      ]
+      },
+    "MediaTech": {
+        "position" : "UX/UI Design Lead",
+        "year": "November 2011 - October 2015",
+        "description" : [
+          "Directed the product lifecycle of an advanced e-commerce platform, from concept through delivery, aligning product features with strategic business goals.",
+          "Collaborated with cross-functional teams, including marketing, sales, and engineering, to develop features that meet market demands and enhance customer satisfaction.",
+          "Utilized data analytics to monitor product performance and user engagement, adjusting strategies in real time to optimize market reach and profitability, while mentoring junior product managers in best practices."
+      ]
+      }
+  }
+  
